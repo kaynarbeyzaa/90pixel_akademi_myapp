@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/beyza/90pixel_akademi_myapp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/beyza/.gradle/caches/transforms-2/files-2.1/5cd0325c33f9525c52381f43486b5aa4/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

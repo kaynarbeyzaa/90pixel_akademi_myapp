@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/beyza/90pixel_akademi_myapp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+            "map": [
+                {
+                    "source": "/home/beyza/.gradle/caches/transforms-2/files-2.1/5cd0325c33f9525c52381f43486b5aa4/res/values-v25/values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        }
+    ]
+}

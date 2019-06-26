@@ -1,0 +1,4 @@
+#Wed Jun 26 16:03:55 EET 2019
+base.0=/home/beyza/90pixel_akademi_myapp/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
