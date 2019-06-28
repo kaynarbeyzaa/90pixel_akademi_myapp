@@ -2,44 +2,40 @@
 import React, { Component } from "react";
 import {View,StyleSheet,ScrollView,Text,TextInput,TouchableOpacity,KeyboardAvoidingView,FlatList} from "react-native";
 
-
 export class Chat extends Component {
-  
   constructor(props){
     super(props);
-    this.state = {
+    this.state= {
       message: '',
       messageArray: []
     };
   } 
 
   sendMessage = () => {
-   const newArray = [...this.state.messageArray,this.state.message];
+    const newArray = [...this.state.messageArray,this.state.message];
    //newArray= this.state.messageArray;
    //newArray.push(this.state.message); 
    this.setState({
       messageArray: newArray,
-      message:''
+      message: ''
     })
   }
 
   render () {
     return (
-      
       <KeyboardAvoidingView style={style.container} enabled>
         <ScrollView>
-        <FlatList
+          <FlatList
               keyExtractor = {(item, index) => `list-item-${index}`} 
               data={this.state.messageArray}
               extraData={this.state}
               renderItem= {({ item ,index}) => (
                   <View key={index} style= {style.messageBubble}>
-                  <Text style={style.text}>{item}</Text>
+                    <Text style={style.text}>{item}</Text>
                   </View>
               )}
-              
-            />
-            </ScrollView>
+          />
+        </ScrollView>
         <View style={style.bottom}>
           <TextInput
             placeholder="Text..."
@@ -50,11 +46,9 @@ export class Chat extends Component {
           />
           <TouchableOpacity
             style={style.button}
-            
             onPress={() => {
             this.sendMessage()
-            }
-            }
+            }}
           >
             <Text style={style.buttonText}>Submit</Text>
           </TouchableOpacity>
@@ -89,14 +83,13 @@ const style= StyleSheet.create({
     alignSelf: "flex-end",
     borderRadius: 10,
     //marginBottom: 5,
-    marginTop:10,
-    marginRight:10,
-    marginLeft:50
+    marginTop: 10,
+    marginRight: 10,
+    marginLeft: 50
   },
   text:{
-    color:"#fff"
+    color: "#fff"
   },
-  
   input: {
     height: 40,
     padding: 5,
@@ -109,8 +102,8 @@ const style= StyleSheet.create({
     padding : 10,
     backgroundColor : '#3d055b',
     marginTop: 10,
-    marginBottom:10,
-    marginRight:10,
+    marginBottom: 10,
+    marginRight: 10,
     borderRadius: 10,
   },
   buttonText: {

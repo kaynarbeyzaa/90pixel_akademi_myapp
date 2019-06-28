@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24c1cc95-62c8-46d3-94d5-90f44d960f8d" name="Default Changelist" comment="" />
+    <list default="true" id="24c1cc95-62c8-46d3-94d5-90f44d960f8d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../components/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../components/LoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../components/SingupForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../components/SingupForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../router/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../router/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../scene/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../scene/Chat.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,21 +27,25 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="y" value="31" />
     <option name="width" value="960" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -145,8 +156,8 @@
       <window_info anchor="bottom" id="Logcat" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50532484" side_tool="true" visible="true" weight="0.20819113" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.4946752" visible="true" weight="0.20819113" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5058573" side_tool="true" visible="true" weight="0.2072893" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.4941427" visible="true" weight="0.2072893" />
       <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />

@@ -1,27 +1,20 @@
 
 import React, { Component } from 'react';
-import{StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
+import{StyleSheet, Text, View, TextInput, Linking, TouchableOpacity} from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 export default class Home extends Component{
     render (){
         return (
             <View style={style.container}>
-                <View style={style.logocontainer}>
-                    <Image 
-                        style={style.logo}
-                        source={require('../docs/spaceship.png')}
-                    />
-                </View>
+                <Text style={style.text}>Enter your e-mail</Text>
+                <TextInput style={style.textinput}
+                    placeholder="E-mail"
+                    underlineColorAndroid={'#fff'}/>
                 <TouchableOpacity onPress={() => 
                     Actions.Login({Singup:false})}
                     style={style.button}>
-                    <Text style={style.buttontext}>Log In</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => 
-                    Actions.Singup({Login:false})}
-                    style={style.button}>
-                    <Text style={style.buttontext}>Sing Up</Text>
+                    <Text style={style.buttontext}>Continue</Text>
                 </TouchableOpacity>
             </View>
         );
@@ -30,27 +23,28 @@ export default class Home extends Component{
 
 const style = StyleSheet.create({
     container: {
-        flex:1,
+        alignSelf: 'stretch',
+        alignItems : 'center',
+        flex: 1,
         justifyContent: 'center',
         backgroundColor: '#c4c9e8',
         paddingLeft: 60,
         paddingLeft: 60,
         paddingRight: 60
     },
-    logocontainer: {
-        alignItems: 'center',
-        paddingBottom: 50,
-    },
-    logo: {
-        width: 100,
-        height: 100
-    },
-    title: {
+    text: {
+        color: '#3d055b',
         fontSize: 30,
-        color: '#fff',
-        paddingBottom: 10,
-        marginBottom: 40,
-        borderBottomColor: '#fff',
+        marginTop: 10,
+        alignSelf: 'stretch',
+        marginTop: 30,
+    },
+    textinput: {
+        alignSelf: 'stretch',
+        height: 60,
+        color: '#3d055b',
+        marginBottom: 30,
+        borderBottomColor: '#fff',   
     },
     button: {
         alignSelf: 'stretch',

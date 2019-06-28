@@ -36,33 +36,31 @@ export default class SingupForm extends React.Component {
 const style = StyleSheet.create({
     singupform: {
         alignSelf: 'stretch',
+        alignItems : 'center',
     },
     title: {
         fontSize: 30,
-        color: '#fff',
+        color: '#3d055b',
         paddingBottom: 10,
         marginBottom: 40,
-        borderBottomColor: '#fff',
-        
+        borderBottomColor: '#fff',    
     },
     textinput: {
         alignSelf: 'stretch',
         height: 60,
         color: '#3d055b',
         marginBottom: 30,
-        borderBottomColor: '#fff',
-        
+        borderBottomColor: '#fff',   
     },
     button: {
         alignSelf: 'stretch',
         alignItems : 'center',
         padding : 20,
         backgroundColor : '#3d055b',
-        marginTop: 30,
+        marginTop: 10,
         borderRadius: 10,
     },
     buttontext: {
-        color: '#fff',
-        
+        color: '#fff',    
     }
 });

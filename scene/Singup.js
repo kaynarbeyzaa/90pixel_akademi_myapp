@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import{StyleSheet, Text, View, TextInput,TouchableOpacity} from 'react-native';
+import{StyleSheet, View} from 'react-native';
 
 import SingupForm from '../components/SingupForm';
 
@@ -16,7 +16,7 @@ export default class Singup extends Component {
 
 const style = StyleSheet.create({
     container: {
-        flex:1,
+        flex: 1,
         justifyContent: 'center',
         backgroundColor: '#c4c9e8',
         paddingLeft: 60,
