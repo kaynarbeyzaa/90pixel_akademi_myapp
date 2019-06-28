@@ -1,10 +1,8 @@
 # 90Pixel Akademi Myapp
-
-<<<<<<< HEAD
 90Pixel Akademi dersleri sırasında öğrendiğim bilgileri kullanarak react native ile ilk app'imi yaptım. Derslerin linki [buradadır.](https://www.youtube.com/channel/UCGMT5V8LCTrLlXbbUq8cKfQ) Projemde [react native router flux](https://github.com/aksonov/react-native-router-flux) ve [react native elements](https://github.com/react-native-training/react-native-elements) paketlerini kullandım. Bu app'te:
-=======
+
 90Pixel Akademi dersleri sırasında öğrendiğim bilgileri kullanarak react native ile ilk app'imi yaptım. Derslerin linki [buradadır.](https://www.youtube.com/channel/UCGMT5V8LCTrLlXbbUq8cKfQ) Bu app'te:
->>>>>>> e53fbc8e084f324ab015110506e1fab6e8d5ed43
+
 #### **Home**
 
 ![Home,home screen](/screens/Home.png)
@@ -27,9 +25,6 @@
 
 ekranları bulunmaktadır.
 
-<<<<<<< HEAD
-=======
 Projemde [react native router flux](https://github.com/aksonov/react-native-router-flux) ve [react native elements](https://github.com/react-native-training/react-native-elements) paketlerini kullandım.
->>>>>>> e53fbc8e084f324ab015110506e1fab6e8d5ed43
 
 
