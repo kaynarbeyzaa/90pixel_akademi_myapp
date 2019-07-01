@@ -7,7 +7,7 @@ import {
 } from 'react-native-router-flux'
 
 import Login from '../scene/Login'
-import Singup from '../scene/Singup'
+import Signup from '../scene/Signup'
 import Home from '../scene/Home'
 import Chat from '../scene/Chat'
 import Contacts from '../scene/Contacts';
@@ -29,9 +29,9 @@ const Routes = () => {
                     component= {Login}
                 />
                 <Scene
-                    key= "Singup"
-                    title= "Sing Up"
-                    component= {Singup}
+                    key= "Signup"
+                    title= "Sign Up"
+                    component= {Signup}
                 />
                 <Scene
                     key= "Contacts"

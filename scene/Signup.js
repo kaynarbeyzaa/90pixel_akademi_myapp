@@ -13,8 +13,8 @@ export default class Singup extends Component {
     render () {
         return (
             <View style = {styles.container}>
-                <View style={styles.singupform}>
-                    <Text style={styles.title}>Sing Up</Text>
+                <View style={styles.signupform}>
+                    <Text style={styles.title}>Sign Up</Text>
                     <TextInput style={styles.textinput}
                         placeholder="Name"
                         underlineColorAndroid={'#fff'}/>
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         paddingLeft: 60,
         paddingRight: 60
     },
-    singupform: {
+    signupform: {
         alignSelf: 'stretch',
         alignItems : 'center',
     },

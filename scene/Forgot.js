@@ -4,10 +4,10 @@ import{
     StyleSheet,
     Text,
     View,
-    TextInput,
-    TouchableOpacity
+    TextInput
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
+import MyButton from '../components/MyButton';
 
 export default class Home extends Component{
     render (){
@@ -17,11 +17,7 @@ export default class Home extends Component{
                 <TextInput style={styles.textinput}
                     placeholder="E-mail"
                     underlineColorAndroid={'#fff'}/>
-                <TouchableOpacity onPress={() => 
-                    Actions.Approval()}
-                    style={styles.button}>
-                    <Text style={styles.buttontext}>Continue</Text>
-                </TouchableOpacity>
+                 <MyButton test="Continue" onPress={Actions.Approval}/>
             </View>
         );
     }

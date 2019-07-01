@@ -11,14 +11,14 @@ import {
 import { Actions } from "react-native-router-flux";
 
 class Contacts extends Component {
-  state={
+  state = {
     seed: 1,
     page: 1,
     data: [],
     loading: false,
     refreshing: false,
   };
-  handleRefresh=() => {
+  handleRefresh() {
     this.setState({
       page: 1,
       seed: this.state.seed + 1,
@@ -26,7 +26,7 @@ class Contacts extends Component {
       },
     );
   };
-  handleLoadMore=() => {
+  handleLoadMore() {
     this.setState({
       page: this.state.page + 1
     },
@@ -39,7 +39,7 @@ class Contacts extends Component {
     this.loadUsers();
   }
     
-  loadUsers=() => {
+  loadUsers(){
     const {page, seed}=this.state;
     const url=`https://randomuser.me/api/?seed=${seed}&page=${page}&results=20`;
     this.setState({ loading: true });

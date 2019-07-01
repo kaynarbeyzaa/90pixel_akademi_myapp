@@ -8,6 +8,7 @@ import{
 import { Actions } from 'react-native-router-flux';
 import MyButton from '../components/MyButton';
 
+
 export default class Home extends Component{
     render (){
         return (
@@ -19,7 +20,7 @@ export default class Home extends Component{
                     />
                 </View>
                 <MyButton test="Log In" onPress={Actions.Login}/>
-                <MyButton test="Sing Up" onPress={Actions.Singup}/>
+                <MyButton test="Register" onPress={Actions.Signup}/>
             </View>
         );
     }
@@ -40,12 +41,5 @@ const styles=StyleSheet.create({
     logo: {
         width: 100,
         height: 100
-    },
-    title: {
-        fontSize: 30,
-        color: '#fff',
-        paddingBottom: 10,
-        marginBottom: 40,
-        borderBottomColor: '#fff',
     },
 });

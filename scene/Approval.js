@@ -40,4 +40,5 @@ const styles = StyleSheet.create({
         marginTop: 30,
         marginBottom: 30
     }
+
 });

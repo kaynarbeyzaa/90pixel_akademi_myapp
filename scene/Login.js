@@ -68,16 +68,5 @@ const styles = StyleSheet.create({
         marginBottom: 30,
         borderBottomColor: '#fff',   
     },
-    button: {
-        alignSelf: 'stretch',
-        alignItems : 'center',
-        padding : 20,
-        backgroundColor : '#3d055b',
-        marginTop: 30,
-        borderRadius: 10,
-    },
-    buttontext: {
-        color: '#fff',
-    }
 });
 

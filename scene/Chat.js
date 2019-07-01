@@ -7,7 +7,6 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  KeyboardAvoidingView,
   FlatList,
   SafeAreaView
 } from "react-native";
@@ -20,7 +19,7 @@ export class Chat extends Component {
       messageArray: []
     };
   } 
-  sendMessage=() => {
+  sendMessage() {
     const newArray=[...this.state.messageArray,this.state.message];
     this.setState({
       messageArray: newArray,
