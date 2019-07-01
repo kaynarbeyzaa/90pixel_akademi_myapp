@@ -29,8 +29,7 @@ export class Chat extends Component {
   }
   render () {
     return (
-      <SafeAreaView >
-        <KeyboardAvoidingView style={styles.container} enabled>
+      <SafeAreaView style={styles.container}>
           <ScrollView>
            <FlatList
               keyExtractor={(item, index) => `list-item-${index}`} 
@@ -43,6 +42,7 @@ export class Chat extends Component {
               )}
             />
           </ScrollView>
+          <SafeAreaView>
           <View style={styles.bottom}>
             <TextInput
               placeholder="Text..."
@@ -62,7 +62,7 @@ export class Chat extends Component {
               <Text style={styles.buttonText}>Submit</Text>
             </TouchableOpacity>
           </View>
-        </KeyboardAvoidingView>
+          </SafeAreaView>
       </SafeAreaView>
     );
   }
