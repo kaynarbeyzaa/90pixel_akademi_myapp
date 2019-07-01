@@ -5,7 +5,6 @@ import{
     Text, 
     View, 
     TextInput, 
-    TouchableOpacity
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import MyButton from '../components/MyButton';

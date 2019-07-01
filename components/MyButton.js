@@ -1,28 +1,25 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import{
     StyleSheet, 
     Text, 
-    View, 
-    TextInput, 
     TouchableOpacity
 } from 'react-native';
-import { Actions } from 'react-native-router-flux';
 
-    const MyButton = ({ 
+    const MyButton=({ 
             onPress,
             test,
     }) => {
             return(
                 <TouchableOpacity 
                     onPress={onPress}
-                    style = {styles.button}>
-                    <Text style = {styles.buttontext}>{test}</Text>
+                    style={styles.button}>
+                    <Text style={styles.buttontext}>{test}</Text>
                 </TouchableOpacity>
             );
         };
 
-const styles = StyleSheet.create({
+const styles=StyleSheet.create({
     button: {
         alignSelf: 'stretch',
         alignItems : 'center',

@@ -20,57 +20,55 @@ export class Chat extends Component {
       messageArray: []
     };
   } 
-
-  sendMessage = () => {
-    const newArray = [...this.state.messageArray,this.state.message];
+  sendMessage=() => {
+    const newArray=[...this.state.messageArray,this.state.message];
     this.setState({
       messageArray: newArray,
       message: ''
     })
   }
-
   render () {
     return (
-      
-      <KeyboardAvoidingView style = {styles.container} enabled>
-        <ScrollView>
-          <FlatList
-              keyExtractor = {(item, index) => `list-item-${index}`} 
-              data = {this.state.messageArray}
-              extraData = {this.state}
-              renderItem = {({ item ,index}) => (
-                  <View key = {index} style = {styles.messageBubble}>
-                    <Text style = {styles.text}>{item}</Text>
+      <SafeAreaView >
+        <KeyboardAvoidingView style={styles.container} enabled>
+          <ScrollView>
+           <FlatList
+              keyExtractor={(item, index) => `list-item-${index}`} 
+              data={this.state.messageArray}
+              extraData={this.state}
+              renderItem={({ item ,index}) => (
+                  <View key={index} style={styles.messageBubble}>
+                    <Text style={styles.text}>{item}</Text>
                   </View>
               )}
-          />
-        </ScrollView>
-        <View style = {styles.bottom}>
-          <TextInput
-            placeholder = "Text..."
-            placeholderTextColor = "#3d055b"
-            value = {this.state.message}
-            onChangeText = {(text) => 
-              this.setState({message:text}) 
-            }
-            style = {styles.input}
-          />
-          <TouchableOpacity
-            style = {styles.button}
-            onPress = {() => {
-            this.sendMessage()
-            }}
-          >
-            <Text style = {styles.buttonText}>Submit</Text>
-          </TouchableOpacity>
-        </View>
-        
-      </KeyboardAvoidingView>
+            />
+          </ScrollView>
+          <View style={styles.bottom}>
+            <TextInput
+              placeholder="Text..."
+              placeholderTextColor="#3d055b"
+              value={this.state.message}
+              onChangeText={(text) => 
+                this.setState({message:text}) 
+              }
+              style={styles.input}
+            />
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => {
+              this.sendMessage()
+              }}
+            >
+              <Text style={styles.buttonText}>Submit</Text>
+            </TouchableOpacity>
+          </View>
+        </KeyboardAvoidingView>
+      </SafeAreaView>
     );
   }
 }
 
-const styles = StyleSheet.create({
+const styles=StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#c4c9e8",

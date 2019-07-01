@@ -2,9 +2,7 @@
 import React, { Component } from 'react';
 import{
     StyleSheet,
-    Text,
     View,
-    TouchableOpacity,
     Image
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
@@ -13,11 +11,11 @@ import MyButton from '../components/MyButton';
 export default class Home extends Component{
     render (){
         return (
-            <View style = {styles.container}>
-                <View style = {styles.logocontainer}>
+            <View style={styles.container}>
+                <View style={styles.logocontainer}>
                     <Image 
-                        style = {styles.logo}
-                        source = {require('../docs/spaceship.png')}
+                        style={styles.logo}
+                        source={require('../docs/spaceship.png')}
                     />
                 </View>
                 <MyButton test="Log In" onPress={Actions.Login}/>
@@ -27,12 +25,11 @@ export default class Home extends Component{
     }
 }
 
-const styles = StyleSheet.create({
+const styles=StyleSheet.create({
     container: {
         flex:1,
         justifyContent: 'center',
         backgroundColor: '#c4c9e8',
-        paddingLeft: 60,
         paddingLeft: 60,
         paddingRight: 60
     },

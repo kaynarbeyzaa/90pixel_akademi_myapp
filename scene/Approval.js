@@ -16,7 +16,6 @@ export default class Home extends Component{
         );
     }
 }
-
 const styles = StyleSheet.create({
     container: {
         alignSelf: 'stretch',
@@ -41,5 +40,4 @@ const styles = StyleSheet.create({
         marginTop: 30,
         marginBottom: 30
     }
-    
 });

@@ -12,22 +12,21 @@ import { Actions } from 'react-native-router-flux';
 export default class Home extends Component{
     render (){
         return (
-            <View style = {styles.container}>
-                <Text style = {styles.text}>Enter your e-mail</Text>
-                <TextInput style = {styles.textinput}
-                    placeholder = "E-mail"
-                    underlineColorAndroid = {'#fff'}/>
-                <TouchableOpacity onPress = {() => 
+            <View style={styles.container}>
+                <Text style={styles.text}>Enter your e-mail</Text>
+                <TextInput style={styles.textinput}
+                    placeholder="E-mail"
+                    underlineColorAndroid={'#fff'}/>
+                <TouchableOpacity onPress={() => 
                     Actions.Approval()}
-                    style = {styles.button}>
-                    <Text style = {styles.buttontext}>Continue</Text>
+                    style={styles.button}>
+                    <Text style={styles.buttontext}>Continue</Text>
                 </TouchableOpacity>
             </View>
         );
     }
 }
-
-const styles = StyleSheet.create({
+const styles=StyleSheet.create({
     container: {
         alignSelf: 'stretch',
         alignItems : 'center',

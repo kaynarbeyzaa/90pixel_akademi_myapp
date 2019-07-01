@@ -11,14 +11,14 @@ import {
 import { Actions } from "react-native-router-flux";
 
 class Contacts extends Component {
-  state = {
+  state={
     seed: 1,
     page: 1,
     data: [],
     loading: false,
     refreshing: false,
   };
-  handleRefresh = () => {
+  handleRefresh=() => {
     this.setState({
       page: 1,
       seed: this.state.seed + 1,
@@ -26,8 +26,7 @@ class Contacts extends Component {
       },
     );
   };
-    
-  handleLoadMore = () => {
+  handleLoadMore=() => {
     this.setState({
       page: this.state.page + 1
     },
@@ -40,11 +39,10 @@ class Contacts extends Component {
     this.loadUsers();
   }
     
-  loadUsers = () => {
-    const {page, seed} = this.state;
-    const url = `https://randomuser.me/api/?seed=${seed}&page=${page}&results=20`;
+  loadUsers=() => {
+    const {page, seed}=this.state;
+    const url=`https://randomuser.me/api/?seed=${seed}&page=${page}&results=20`;
     this.setState({ loading: true });
-    
     fetch(url)
       .then(res => res.json())
       .then(res => {
@@ -58,50 +56,48 @@ class Contacts extends Component {
         console.error(err);
       });
   };
-    
   render() {
     return (
-      <List style = {styles.scene}>
+      <List style={styles.scene}>
         <FlatList
-          data = {this.state.data}
-          renderItem = {({item}) => (
+          data={this.state.data}
+          renderItem={({item}) => (
             <ListItem
                 button 
                 roundAvatar
-                title = {item.name.first}
-                subtitle = {item.email}
-                avatar = {{ uri: item.picture.thumbnail }}
-                onPress = {() => 
+                title={item.name.first}
+                subtitle={item.email}
+                avatar={{ uri: item.picture.thumbnail }}
+                onPress={() => 
                   Actions.Chat()
                 } 
             />
           )}
             
-          keyExtractor = {item => item.email}
-          onRefreshing = {this.handleRefresh}
-          refreshing = {this.state.refreshing}
-          onEndReached = {this.handleLoadMore}
-          onEndReachedThreshold = {0}
+          keyExtractor={item => item.email}
+          onRefreshing={this.handleRefresh}
+          refreshing={this.state.refreshing}
+          onEndReached={this.handleLoadMore}
+          onEndReachedThreshold={0}
         />
       </List>
     );
   }
 }
-
-const styles = StyleSheet.create({
+const styles=StyleSheet.create({
     scene: {
         flex: 1,
         paddingTop: 25,
         borderTopWidth: 0,
         borderBottomWidth: 0
     },
-    user:{
+    user: { 
         width: '100%',
         backgroundColor: '#333',
         marginBottom: 10,
         paddingLeft: 25,
     },
-    userName:{
+    userName: {
         fontSize: 17,
         paddingVertical: 20,
         color: '#fff'

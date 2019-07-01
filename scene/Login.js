@@ -13,17 +13,17 @@ import MyButton from '../components/MyButton';
 export default class Login extends Component {
     render () {
         return (
-            <View style = {styles.container}>
-                <View style = {styles.loginform}>
-                    <Text style = {styles.title}>Log In</Text>
+            <View style={styles.container}>
+                <View style={styles.loginform}>
+                    <Text style={styles.title}>Log In</Text>
+                    <TextInput style={styles.textinput}
+                        placeholder="E-mail"
+                        underlineColorAndroid={'#fff'}/>
                     <TextInput style = {styles.textinput}
-                        placeholder = "E-mail"
-                        underlineColorAndroid = {'#fff'}/>
-                    <TextInput style = {styles.textinput}
-                        placeholder = "Password"
-                        secureTextEntry = {true}
-                        underlineColorAndroid = {'#fff'}/>
-                    <MyButton test="Log In" onPress={Actions.Login}/>
+                        placeholder="Password"
+                        secureTextEntry={true}
+                        underlineColorAndroid={'#fff'}/>
+                    <MyButton test="Log In" onPress={Actions.Contacts}/>
                     <TouchableOpacity 
                         onPress={() => 
                             Actions.Forgot()}>
@@ -53,7 +53,6 @@ const styles = StyleSheet.create({
         textDecorationLine: 'underline',
         marginTop: 10,
         alignSelf: 'stretch',
-
     },
     title: {
         fontSize: 30,
@@ -79,7 +78,6 @@ const styles = StyleSheet.create({
     },
     buttontext: {
         color: '#fff',
-        
     }
 });
 
