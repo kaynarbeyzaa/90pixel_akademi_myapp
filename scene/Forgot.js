@@ -1,27 +1,33 @@
 
 import React, { Component } from 'react';
-import{StyleSheet, Text, View, TextInput, Linking, TouchableOpacity} from 'react-native';
+import{
+    StyleSheet,
+    Text,
+    View,
+    TextInput,
+    TouchableOpacity
+} from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 export default class Home extends Component{
     render (){
         return (
-            <View style={style.container}>
-                <Text style={style.text}>Enter your e-mail</Text>
-                <TextInput style={style.textinput}
-                    placeholder="E-mail"
-                    underlineColorAndroid={'#fff'}/>
-                <TouchableOpacity onPress={() => 
-                    Actions.Login({Singup:false})}
-                    style={style.button}>
-                    <Text style={style.buttontext}>Continue</Text>
+            <View style = {styles.container}>
+                <Text style = {styles.text}>Enter your e-mail</Text>
+                <TextInput style = {styles.textinput}
+                    placeholder = "E-mail"
+                    underlineColorAndroid = {'#fff'}/>
+                <TouchableOpacity onPress = {() => 
+                    Actions.Approval()}
+                    style = {styles.button}>
+                    <Text style = {styles.buttontext}>Continue</Text>
                 </TouchableOpacity>
             </View>
         );
     }
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
         alignSelf: 'stretch',
         alignItems : 'center',
@@ -29,15 +35,14 @@ const style = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#c4c9e8',
         paddingLeft: 60,
-        paddingLeft: 60,
         paddingRight: 60
     },
     text: {
         color: '#3d055b',
         fontSize: 30,
-        marginTop: 10,
         alignSelf: 'stretch',
         marginTop: 30,
+        marginBottom: 30
     },
     textinput: {
         alignSelf: 'stretch',
@@ -55,7 +60,6 @@ const style = StyleSheet.create({
         borderRadius: 10,
     },
     buttontext: {
-        color: '#fff',
-        
+        color: '#fff'  
     }
 });

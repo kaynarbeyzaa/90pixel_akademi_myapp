@@ -1,34 +1,33 @@
 
 import React, { Component } from 'react';
-import{StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
+import{
+    StyleSheet,
+    Text,
+    View,
+    TouchableOpacity,
+    Image
+} from 'react-native';
 import { Actions } from 'react-native-router-flux';
+import MyButton from '../components/MyButton';
 
 export default class Home extends Component{
     render (){
         return (
-            <View style={style.container}>
-                <View style={style.logocontainer}>
+            <View style = {styles.container}>
+                <View style = {styles.logocontainer}>
                     <Image 
-                        style={style.logo}
-                        source={require('../docs/spaceship.png')}
+                        style = {styles.logo}
+                        source = {require('../docs/spaceship.png')}
                     />
                 </View>
-                <TouchableOpacity onPress={() => 
-                    Actions.Login({Singup:false})}
-                    style={style.button}>
-                    <Text style={style.buttontext}>Log In</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => 
-                    Actions.Singup({Login:false})}
-                    style={style.button}>
-                    <Text style={style.buttontext}>Sing Up</Text>
-                </TouchableOpacity>
+                <MyButton test="Log In" onPress={Actions.Login}/>
+                <MyButton test="Sing Up" onPress={Actions.Singup}/>
             </View>
         );
     }
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
         flex:1,
         justifyContent: 'center',
@@ -52,16 +51,4 @@ const style = StyleSheet.create({
         marginBottom: 40,
         borderBottomColor: '#fff',
     },
-    button: {
-        alignSelf: 'stretch',
-        alignItems : 'center',
-        padding : 20,
-        backgroundColor : '#3d055b',
-        marginTop: 30,
-        borderRadius: 10,
-    },
-    buttontext: {
-        color: '#fff',
-        
-    }
 });

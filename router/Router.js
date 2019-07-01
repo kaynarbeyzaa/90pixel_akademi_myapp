@@ -1,6 +1,10 @@
 
 import React, { Component } from 'react'
-import {Router, Scene, Stack} from 'react-native-router-flux'
+import {
+    Router, 
+    Scene, 
+    Stack
+} from 'react-native-router-flux'
 
 import Login from '../scene/Login'
 import Singup from '../scene/Singup'
@@ -8,6 +12,7 @@ import Home from '../scene/Home'
 import Chat from '../scene/Chat'
 import Contacts from '../scene/Contacts';
 import Forgot from '../scene/Forgot';
+import Approval from '../scene/Approval';
 
 const Routes = () => {
     return (
@@ -43,9 +48,14 @@ const Routes = () => {
                     title= "Forgot"
                     component= {Forgot}
                 />
+                <Scene
+                    key= "Approval"
+                    title= "Approval"
+                    component= {Approval}
+                />
             </Stack>
         </Router>
     )
 }
 
-export default Routes
+export default Routes;

@@ -68,6 +68,9 @@
 		<string>MaterialCommunityIcons.ttf</string>
 		<string>MaterialIcons.ttf</string>
 		<string>Octicons.ttf</string>
+		<string>Roboto_medium.ttf</string>
+		<string>Roboto.ttf</string>
+		<string>rubicon-icon-font.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
 		<string>Andale Mono.ttf</string>
@@ -77,12 +80,9 @@
 		<string>Courier New.ttf</string>
 		<string>Georgia.ttf</string>
 		<string>Microsoft Sans Serif.ttf</string>
-		<string>Roboto_medium.ttf</string>
-		<string>Roboto.ttf</string>
 		<string>SF-UI-Text-Regular.otf</string>
 		<string>Skia.ttf</string>
 		<string>Times New Roman.ttf</string>
-		<string>rubicon-icon-font.ttf</string>
 	</array>
 </dict>
 </plist>

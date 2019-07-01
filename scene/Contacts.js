@@ -1,7 +1,13 @@
 
 import React, { Component } from "react";
-import { FlatList, StyleSheet,Text} from "react-native";
-import { List, ListItem } from "react-native-elements";
+import { 
+  FlatList, 
+  StyleSheet,
+} from "react-native";
+import {
+  List,
+  ListItem 
+} from "react-native-elements";
 import { Actions } from "react-native-router-flux";
 
 class Contacts extends Component {
@@ -35,7 +41,7 @@ class Contacts extends Component {
   }
     
   loadUsers = () => {
-    const { page, seed } = this.state;
+    const {page, seed} = this.state;
     const url = `https://randomuser.me/api/?seed=${seed}&page=${page}&results=20`;
     this.setState({ loading: true });
     
@@ -55,34 +61,34 @@ class Contacts extends Component {
     
   render() {
     return (
-      <List style={style.scene}>
+      <List style = {styles.scene}>
         <FlatList
-          data={this.state.data}
-          renderItem={({ item }) => (
+          data = {this.state.data}
+          renderItem = {({item}) => (
             <ListItem
                 button 
                 roundAvatar
-                title={item.name.first}
-                subtitle={item.email}
-                avatar={{ uri: item.picture.thumbnail }}
-                onPress={() => 
+                title = {item.name.first}
+                subtitle = {item.email}
+                avatar = {{ uri: item.picture.thumbnail }}
+                onPress = {() => 
                   Actions.Chat()
                 } 
             />
           )}
             
-          keyExtractor={item => item.email}
-          onRefreshing={this.handleRefresh}
-          refreshing={this.state.refreshing}
-          onEndReached={this.handleLoadMore}
-          onEndReachedThreshold={0}
+          keyExtractor = {item => item.email}
+          onRefreshing = {this.handleRefresh}
+          refreshing = {this.state.refreshing}
+          onEndReached = {this.handleLoadMore}
+          onEndReachedThreshold = {0}
         />
       </List>
     );
   }
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
     scene: {
         flex: 1,
         paddingTop: 25,

@@ -5,13 +5,21 @@
 
 ![Home,home screen](/screens/Home.png)
 
+#### **Sing Up**
+
+![Singup,sing up screen](/screens/Singup.png)
+
 #### **Log In**
 
 ![Login,log in screen](/screens/Login.png)
 
-#### **Sing Up**
+#### **Forgot**
 
-![Singup,sing up screen](/screens/Singup.png)
+![Forgot,forgot screen](/screens/Forgot.png)
+
+#### **Approval**
+
+![Approval,approval screen](/screens/Approval.png)
 
 #### **Contacts**
 
